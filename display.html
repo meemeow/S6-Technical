@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Signup Data</title>
+    <style>
+        .data-container {
+            width: 50%;
+            top: 50%;
+            margin: 250px auto;
+            border-radius: 15px;
+            border: 4px solid #000000;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="data-container" id="data-container">
+        <!-- Data will be inserted here -->
+    </div>
+
+    <script>
+        document.getElementById('data-container').innerHTML = `
+            <h1>These are the data from the Signup Form. Thank you!</h1>
+            <p>First Name: ${localStorage.getItem('firstName')}</p>
+            <p>Last Name: ${localStorage.getItem('lastName')}</p>
+            <p>Email: ${localStorage.getItem('email')}</p>
+            <p>Password: ${localStorage.getItem('password')}</p>
+            <p>Confirm Password: ${localStorage.getItem('confirmPassword')}</p>
+        `;
+    </script>
+</body>
+</html>

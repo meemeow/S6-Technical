@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/styles.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="#home">
+            <h1>Meemeow's Login&Signup</h1>
+        </a>
+    </div>
+
+
+
+    <!-- login & signup -->
+    <div class="container">
+        <div class="button-container">
+            <button id="login-button" class="login-button">Log In</button>
+            <button id="signup-button" class="signup-button">Sign Up</button>
+        </div>
+         <div class="login-form" id="login-form">
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Enter email or username" required>
+                <input type="password" name="password" placeholder="Enter password" required>
+                <button class="loginSubmit" type="submit">Login</button>
+            </form>
+            <a href="#">
+                <p>Forgotten Account?</p>
+            </a>
+            <div class="signin-link">
+                <a href="https://www.google.com">
+                    <button class="btn">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-1772223-1507807.png" alt="Google Icon">
+                        Sign In With Google
+                    </button>
+                </a>
+                <a href="https://www.linkedin.com">
+                    <button class="btn">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-42-151143.png" alt="Linkedin Icon">
+                        Sign In With Linkedin
+                    </button>
+                </a>
+                <a href="https://www.microsoft.com">
+                    <button class="btn">
+                        <img src="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2022/06/cropped-microsoft_logo_element.png" alt="Microsoft Icon">
+                        Sign In With Microsoft
+                    </button>
+                </a>
+            </div>
+        </div> 
+        <div class="signup-form" id="signup-form">
+            <div class="signupBanner">
+                <h2>Please fill in this form to create an account!</h2>
+            </div>
+            <form id="signup-form">
+                <input id="first-name" type="text" name="firstName" placeholder="First Name" required>
+                <input id="last-name" type="text" name="lastName" placeholder="Last Name" required>
+                <input id="email" type="text" name="username" placeholder="Email" required>
+                <input id="password" type="password" name="password" placeholder="Password" required>
+                <input id="password2" type="password" name="password2" placeholder="Confirm password" required>
+                <div class="checkboxTerms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the <a href="#terms-of-use">Terms of Use</a> & <a href="#privacy-policy">Privacy Policy</a></label>
+                </div>
+                <button class="signupSubmit" type="submit">Sign Up</button>
+            </form>
+        </div>
+        
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <p>©2024 Meemeow GitCompany. This site is created for educational purpose only!!!</p>
+    </div>
+
+
+    <script src="ASSETS/JS/script.js"></script>
+</body>
+</html>
