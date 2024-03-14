@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh !important;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 30px 45px;
+    background-color: #4b4b4b;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 620px; 
+    min-height: 800px;
+    margin-top: 100px; 
+    margin-bottom: 100px; 
+    border-radius: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+}
+
+.button-container .login-button.active,
+.button-container .signup-button.active {
+    background-color: #0074c2;
+    color: white;
+}
+
+.button-container .login-button,
+.button-container .signup-button {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.button-container .login-button {
+    position: relative;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    width: 50%;
+    background-color: #f4f4f4;
+    border-radius: 15px 15px 15px 0;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.button-container .signup-button {
+    position: relative;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    padding: 35px 25px;
+    width: 50%;
+    background-color: #f4f4f4;
+    border-radius: 15px 15px 0 15px;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.1s;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #dadada;
+    font-size: 17px;
+    margin: 0 10px 20px 14px;
+    padding: 25px 30px;
+    width: 95%;
+    border: none;
+    border-radius: 19px;
+}
+
+.loginSubmit {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    width: 95%;
+    padding: 25px 45px;
+    margin-top: 7px;
+    background-color: #0074c2;
+    color: white;
+    border: none;
+    border-radius: 19px;
+    margin: 10px 10px 0 14px;
+    display: block;
+}
+
+.login-form p {
+    position: relative;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #0074c2;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.login-form a {
+    text-decoration: none;
+}
+
+.signin-link {
+    position: relative;
+    box-shadow: 0 -5px 5px -5px rgba(44, 44, 44, 0.6);
+    width: 94%;
+    height: 300px;
+    margin: auto;
+    padding-top: 7px;
+}
+
+.signin-link a {
+    text-decoration: none;
+}
+
+.signin-link .btn {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    width: 95%;
+    padding: 20px 45px;
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+    border-radius: 19px;
+    display: block;
+    border: none;
+    box-shadow: 0 0 1px 0.2px rgba(44, 44, 44, 0.6);
+    margin: 23px 10px 0 14px;
+}
+
+.signin-link .btn:active {
+    background-color: #e7e7e7; 
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn img {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    margin-right: 10px;
+    left: 0;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+.signup-form .signupBanner {
+    position: relative;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    position: relative;
+    box-shadow: 0 5px 5px -5px rgba(44, 44, 44, 0.6);
+    width: 97%;
+    height: 45px;
+    margin: auto;
+    padding: 5px
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #dadada;
+    font-size: 17px;
+    margin: 25px 10px 0 14px;
+    padding: 25px 30px;
+    width: 95%;
+    border: none;
+    border-radius: 19px;
+}
+
+.signup-form .checkboxTerms{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    margin: 19px 10px 15px 19px;
+}
+
+.signupSubmit {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    width: 95%;
+    padding: 25px 45px;
+    margin-top: 15px;
+    background-color: #0074c2;
+    color: white;
+    border: none;
+    border-radius: 19px;
+    margin: 10px 10px 0 14px;
+    display: block;
+}
+
+.footer {
+    position: relative;
+    box-shadow: 0 -1px 2px 0 rgba(44, 44, 44, 0.6);
+    margin-top: 20px; 
+    height: 25vh !important;
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin-top: 40px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
